@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>etch a sketch</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title"><h1>etch a sketch</h1></div>
+      <div class="content">
+        <div class="grid-container"></div>
+        <div class="buttons">
+          <button
+            class="change-black option-btn opt-left"
+            onclick="changeColorBlack()"
+          >
+            black
+          </button>
+          <button
+            class="change-white option-btn opt-left"
+            onclick="changeColorWhite()"
+          >
+            eraser
+          </button>
+          <button
+            class="change-random option-btn opt-right"
+            onclick="changeColorRandom()"
+          >
+            random
+          </button>
+          <button class="reset option-btn opt-right" onclick="resetGrid()">
+            reset
+          </button>
+        </div>
+        <div class="new-size-field">
+          <input
+            type="text"
+            placeholder="input new size of board"
+            value=""
+            class="change-size-text change-size"
+          /><button
+            class="change-size-btn change-size"
+            onclick="changeGridSize()"
+          >
+            set size
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

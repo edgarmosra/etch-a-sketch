@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  font-family: "Koulen", cursive;
+}
+
+button:hover {
+  color: #b8ff2b;
+}
+
+.option-btn {
+  flex: 1;
+}
+
+.opt-left {
+  background: linear-gradient(to right, black 50%, whitesmoke 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.opt-right {
+  background: linear-gradient(to left, black 50%, whitesmoke 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.5s ease-out;
+}
+
+.opt-left:hover {
+  background-position: left bottom;
+}
+
+.opt-right:hover {
+  background-position: right bottom;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding: 40px;
+  font-size: 35px;
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+  letter-spacing: 4px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.buttons {
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+}
+
+.new-size-field {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+}
+
+.change-size {
+  flex: 1;
+}
+
+input {
+  all: unset;
+  text-align: center;
+  font-family: "Koulen", cursive;
+  background-color: white;
+}
+
+input:focus {
+  outline: none !important;
+  border: 0.5px solid #b8ff2b;
+}
+
+.change-size-btn:hover {
+  background-color: black;
+}
+
+.grid-container {
+  width: 500px;
+  height: 500px;
+  border: 3px solid black;
+  display: grid;
+}
+
+.grid-cell {
+  border: 0.5px solid rgb(215, 215, 215);
+}
