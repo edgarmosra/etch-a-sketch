@@ -113,3 +113,14 @@ input:focus {
 .grid-cell {
   border: 0.5px solid rgb(215, 215, 215);
 }
+
+.toggle {
+  border: solid;
+  display: flex;
+}
+
+.toggle-click-hover,
+.toggle-grid {
+  flex: 1;
+  height: 50px;
+}

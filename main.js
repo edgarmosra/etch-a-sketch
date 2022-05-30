@@ -2,6 +2,8 @@
 
 let gridSize = 16;
 let blackBtn = document.querySelector(".change-black");
+let toggleGridBtn = document.querySelector(".toggle-grid");
+let toggleGrid = false;
 
 // function delcarations
 
@@ -86,3 +88,26 @@ function changeGridSize() {
   createGrid(newSize.value);
   changeColorBlack();
 }
+
+function handleToggleGrid(e) {
+  let gridCell = document.querySelectorAll(".grid-cell");
+
+  if (toggleGrid === false) {
+    gridCell.forEach((cell) => {
+      cell.style.border = "0.5px solid white";
+    });
+
+    console.log(toggleGridBtn.textContent);
+    toggleGridBtn.textContent = "grid: off";
+    toggleGrid = true;
+  } else if (toggleGrid === true) {
+    gridCell.forEach((cell) => {
+      cell.style.border = "0.5px solid rgb(215, 215, 215)";
+    });
+
+    toggleGridBtn.textContent = "grid: on";
+    toggleGrid = false;
+  }
+}
+
+toggleGridBtn.addEventListener("click", handleToggleGrid);
